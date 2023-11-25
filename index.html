@@ -1,0 +1,120 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Add Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Guitar Haven - Your Ultimate Guitar Shop</title>
+</head>
+<body>
+
+  <header class="bg-dark text-white text-center py-3">
+    <h1>Guitar Haven</h1>
+    <p class="lead">Your Ultimate Guitar Shop</p>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Main Content -->
+      <div class="col-md-9">
+        <!-- Yamaha Electric Guitars -->
+        <div class="row">
+          <!-- Electric Guitar 1 -->
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/p/a/pacifica112j-black-1_copy.jpg" alt="Yamaha Electric Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Electric Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;78521 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="0">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/r/s/rse20_swift_blue_copy_1.jpg" alt="Yamaha Electric Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Electric Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;45220 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="0">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/0/3/03_11.jpg" alt="Yamaha Electric Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Electric Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;24450 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="0">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/0/1/01_copy_8.jpg" alt="Yamaha Electric Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Electric Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;17425 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="0">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- Add more electric guitars as needed -->
+        </div>
+
+        <!-- Yamaha Acoustic Guitars -->
+        <div class="row mt-4">
+          <!-- Acoustic Guitar 1 -->
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/f/s/fs80c_black.jpg" alt="Yamaha Acoustic Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Acoustic Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;35260 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="1">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/l/s/ls6-1_1.jpg" alt="Yamaha Acoustic Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Acoustic Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;22750 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="1">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="product card col-md-4 mb-4">
+            <img src="https://yamaha.ndcdn.in/media/catalog/product/cache/9e0f31af0cdc06df956748b13dabad87/a/p/apx600_old_violin_sunburst-_1_.jpg" alt="Yamaha Acoustic Guitar 1" class="card-img-top">
+            <div class="card-body">
+              <h2 class="card-title">Yamaha Acoustic Guitar - Model 1</h2>
+              <p class="card-text price">&#8377;77520 Price</p>
+              <button class="btn btn-success btn-add-to-cart" data-product-index="1">Add to Cart</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Shopping Cart Sidebar -->
+      <div class="col-md-3">
+        <div class="cart card mt-4 fixed-cart">
+          <div class="card-body">
+            <h2 class="card-title">Shopping Cart</h2>
+            <ul id="cart-items" class="list-group">
+              <!-- Cart items will be added dynamically using JavaScript -->
+            </ul>
+            <p class="card-text">Total: <span id="cart-total">&#8377;0.00</span></p>
+            <button class="btn btn-primary btn-view-cart" onclick="viewCart()">View Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bootstrap JS and Popper.js from CDN -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
